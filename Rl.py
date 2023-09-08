@@ -1,6 +1,9 @@
-import gym
+start = 40
 
-env = gym.make("Taxi-v2").env
+total = 0
 
-env.render()
+for i in range(365):
+    total += start
+    start *= 1.1
 
+print(total)
